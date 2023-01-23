@@ -1,0 +1,1 @@
+This assignment was great but I really struggled at first. It took me quite a bit of time and some extra research to get back into it. I am happy with how my website turned out. Its minimalist for sure but accurately represents who I am as a person. I look forward to getting a little more creative in the future as I learn and relearn how all this works!
