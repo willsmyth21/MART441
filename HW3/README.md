@@ -1,0 +1,1 @@
+This was a tough week for me. A lot of confused reading led to hesitant and nervous about starting this project. What helped the most was going through trial and error by just seeing what I could make work as I studied every piece of code in the example. I feel much more comfortable with JavaScript than I did last week but I know I stil have a lot to learn. 

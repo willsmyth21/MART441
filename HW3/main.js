@@ -1,85 +1,98 @@
+//window prompt question
+var info = window.prompt("Do you know a Derek");
+console.log(info);
+if(info != "")
+{ 
+}
+else
+{
+    console.log("Nothing Entered");
+}
+
+//story 
 function storyFunction(choice) {
-    var answer1 = document.getElementById("choice1").innerHTML;
+    var answer1 = document.getElementById("choice1").innerHTML; 
     var answer2 = document.getElementById("choice2").innerHTML;
-    if (choice == 1 && answer1 == "Yes") {
-        document.getElementById("story").innerHTML = "Pugster continues into the park with confidence. Pugster meets another dog. What Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Meet others";
-        document.getElementById("choice2").innerHTML = "Walk alone";
-    } else if (choice == 2 && answer2 == "No") {
-        document.getElementById("story").innerHTML = "Pugster starts to back out, but then something in the back of Pugster's mind says 'Wait!'";
-        document.getElementById("choice1").innerHTML = "Go ahead and be brave";
-        document.getElementById("choice2").innerHTML = "Scan the situation";
-    } else if (choice == 1 && answer1 == "Meet others") {
-        document.getElementById("story").innerHTML = "Pugster walks over to a group of dogs and says hello.  Pugster is trying to decide who is genuine or not.";
-        document.getElementById("choice1").innerHTML = "Evaluate all dogs";
-        document.getElementById("choice2").innerHTML = "Stay clear";
-    } else if (choice == 2 && answer2 == "Walk alone") {
-        document.getElementById("story").innerHTML = "Pugster starts to walk over to the dogs and then decides to go to the water instead.  Now what?'";
-        document.getElementById("choice1").innerHTML = "Go for a swim";
-        document.getElementById("choice2").innerHTML = "Get a drink";
-    } else if (choice == 1 && answer1 == "Go ahead and be brave") {
-        document.getElementById("story").innerHTML = "Pugster decides to go in even with hesitation to make new friends.  Will it work?'";
-        document.getElementById("choice1").innerHTML = "Yes it will work";
-        document.getElementById("choice2").innerHTML = "No it will not work";
-    } else if (choice == 2 && answer2 == "Scan the situation") {
-        document.getElementById("story").innerHTML = "Pugster decides to just look around for the moment. What should Pugster do now?";
-        document.getElementById("choice1").innerHTML = "Watch from afar";
-        document.getElementById("choice2").innerHTML = "Get in closer";
-    }
-    // need to do these
-    else if (choice == 1 && answer1 == "Evaluate all dogs") {
-        document.getElementById("story").innerHTML = "Pugster decides that evaluation is the best option." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Stay clear") {
-        document.getElementById("story").innerHTML = "Pugster decides staying away is the best option" + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Go for a swim") {
-        document.getElementById("story").innerHTML = "Pugster decides that swimming sounds most fun" + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Get a drink") {
-        document.getElementById("story").innerHTML = "Pugster decides it's time to drink" + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Yes it will work") {
-        document.getElementById("story").innerHTML = "Pugster thinks, yeah this will work out." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "No it will not work") {
-        document.getElementById("story").innerHTML = "Pugster thinks, I don't think this will work out." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Watch from afar") {
-        document.getElementById("story").innerHTML = "Pugster decides it's time to just watch from a distance for safety." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 2 && answer2 == "Get in closer") {
-        document.getElementById("story").innerHTML = "Pugster decides to get just a little closer, but not engage." + "<br>Restart?";
-        document.getElementById("choice1").innerHTML = "Yes restart";
-        document.getElementById("choice2").innerHTML = "No quit";
-    } else if (choice == 1 && answer1 == "Yes restart") {
-        document.getElementById("story").innerHTML = "Our fearless leader, 'Pugster' has entered the dog park for the first time. Scared? Yes, but willing to give it a try. Are you ready to start on adventure with Pugster?";
-        document.getElementById("choice1").innerHTML = "Yes";
-        document.getElementById("choice2").innerHTML = "No";
-    } else if (choice == 2 && answer2 == "No quit") {
-        document.getElementById("story").innerHTML = "Pugster thanks you!";
 
+    if (choice == 1 && answer1 == "Yep") {
+            document.getElementById("story").innerHTML = "I agree, what do you think will happen to him?"
+            document.getElementById("choice1").innerHTML = "He will explode"
+            document.getElementById("choice2").innerHTML = "He will turn into a cow"
     }
+  else if (choice == 2 && answer2 == "Noooo") {
+            document.getElementById("story").innerHTML = "Are you positive?"
+            document.getElementById("choice1").innerHTML = "Actually yes this could be awesome"
+            document.getElementById("choice2").innerHTML = "Yes I am positive, the human body is not meant to endure that much dairy at once, this sounds rather dangerous in my opinion"
 
+}
+else if (choice == 1 && answer1 == "He will explode") {
+    document.getElementById("story").innerHTML = "Derek exploded !"
+    document.getElementById("choice1").innerHTML = "Send condolences"
+    document.getElementById("choice2").innerHTML = "I should try and save Derek!!!"
+}
+
+else if (choice == 2 && answer2 == "He will turn into a cow") {
+    document.getElementById("story").innerHTML = "Why would anyone turn into a cow after drinking milk?"
+    document.getElementById("choice1").innerHTML = "Oh ya my bad, ill try this again"
+    document.getElementById("choice2").innerHTML = "who?"
+}
+else if (choice == 1 && answer1 == "Actually yes this could be awesome") {
+    document.getElementById("story").innerHTML = "Good choice, can he do it under 5 minutes?"
+    document.getElementById("choice1").innerHTML = "YESSSS"
+    document.getElementById("choice2").innerHTML = "Wait Derek dont do it!"
+
+}
+
+else if (choice == 2 && answer2 == "Yes I am positive, the human body is not meant to endure that much dairy at once, this sounds rather dangerous in my opinion") {
+    document.getElementById("story").innerHTML = "What a responsible choice, are you proud of yourself?"
+    document.getElementById("choice1").innerHTML = "Yes"
+    document.getElementById("choice2").innerHTML = "No"
+}
+
+// story endings
+
+else if (choice == 2 && answer2 == "I should try and save Derek!!!") {
+    document.getElementById("story").innerHTML = "Are you positive?"
+    document.getElementById("choice1").innerHTML = "Actually yes this could be awesome"
+    document.getElementById("choice2").innerHTML = "Yes I am positive, the human body is not meant to endure that much dairy at once, this sounds rather dangerous in my opinion"
+
+}
+else if (choice == 1 && answer1 == "Oh ya my bad, ill try this again") {
+    document.getElementById("story").innerHTML = "Are you positive?"
+    document.getElementById("choice1").innerHTML = "Actually yes this could be awesome"
+    document.getElementById("choice2").innerHTML = "Yes I am positive, the human body is not meant to endure that much dairy at once, this sounds rather dangerous in my opinion"
+
+}
+else if (choice == 2 && answer2 == "Wait Derek dont do it!") {
+    document.getElementById("story").innerHTML = "Are you positive?"
+    document.getElementById("choice1").innerHTML = "Actually yes this could be awesome"
+    document.getElementById("choice2").innerHTML = "Yes I am positive, the human body is not meant to endure that much dairy at once, this sounds rather dangerous in my opinion"
 
 }
 
 
 
+else if (choice == 1 && answer1 == "Send condolences") {
+    document.getElementById("story").innerHTML = "RIP Derek :(";
+  
+}
+else if (choice == 2 && answer2 == "who?") {
+    document.getElementById("story").innerHTML = "RIP Derek :(";
+  
+}
+else if (choice == 1 && answer1 == "Yes") {
+    document.getElementById("story").innerHTML = "RIP Derek :(";
+  
+}
+else if (choice == 2 && answer2 == "No") {
+    document.getElementById("story").innerHTML = "Congratulations you have won the game.";
+  
+}
+else if (choice == 1 && answer1 == "YESSSS") {
+    document.getElementById("story").innerHTML = "Congratulations you have won the game.";
+  
+}
 
 
 
-
-
-
-
-
-
-
+}
