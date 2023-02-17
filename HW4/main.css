@@ -1,0 +1,65 @@
+body {
+
+    background-color: rgb(225, 142, 246);
+    font-family: Helvetica, sans-serif;
+    font-weight: 200;
+}
+
+
+    .title {
+     
+    font-family: Helvetica;
+    font-size: 50pt;
+    color: black;
+    margin-top: 150px;
+    text-align: center;
+    padding: auto;
+    
+    }
+
+    .button {
+     
+        font-family: Helvetica;
+        font-size: 50pt;
+        color: black;
+        margin-top: 50px;
+        text-align: center;
+        padding: auto;
+        
+        }
+    
+
+    
+    .image {
+    
+        
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      
+    }
+    
+    
+    .responsive {
+    
+        max-width: 100%;
+        height: auto;
+        
+    }
+    
+    .paragraph {
+    
+        font-family: helvetica;
+        font-size: 25pt;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    
+    
+    }
+    
+    
