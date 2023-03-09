@@ -1,0 +1,51 @@
+h1 {
+
+    font-family: Helvetica;
+    font-size: 50pt;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    padding: auto;
+    
+}
+
+h3 {
+
+    font-family: Helvetica;
+    font-size: 15pt;
+    color: black;
+    margin-top: 50px;
+    text-align: center;
+    padding: auto;
+    
+}
+
+
+
+body{
+    background-color:rgb(255, 171, 247);
+}
+
+.divTable{
+	display: table;
+	width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.divTableRow {
+	display: table-row;
+}
+.divTableCell, .divTableHead {
+	border: 3px solid #000000;
+	display: table-cell;
+	padding: 10px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+
+.divTableBody {
+	display: table-row-group;
+}

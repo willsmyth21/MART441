@@ -34,7 +34,7 @@ function createRandomImageArray()
     
 // cant figure out how to make not just the first two show up!!!
   
-    while(actualImages.length < 9)
+    while(actualImages.length < 9) 
     {
         
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
