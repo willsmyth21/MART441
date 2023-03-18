@@ -1,7 +1,7 @@
 
 //JS!!!
 
-var imageNames = ["image1", "image2", "image3", "image4"];
+var imageNames = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10"];
 var blankImagePath = "images/heen2.jpeg";
 
 
@@ -26,10 +26,17 @@ function printBlanks()
     for(var i = 0; i < imageNames.length; i++)
     {
      
-        document.getElementById(imageNames[i]).src= blankImagePath;
+        var element = document.getElementById(imageNames[i]).src= blankImagePath;
+        console.log(element, imageNames[i]);
     }
          
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    printBlanks();
+  });
+
+
 
 function createRandomImageArray()
 {
@@ -37,48 +44,55 @@ function createRandomImageArray()
     var actualImagePath = ["images/dvx1002.jpeg", "images/HMC1502.jpeg", "images/hpx1702.jpeg","images/hvx2002.jpeg", "images/vx210002.jpeg"];
 
     // array so they dont get added twice??!!
-    var count = [0,0];
+    var count = [0,0,0,0,0];
+
+    
     
     // fix this when add more images
-    while(actualImages.length < 6)
+    while(actualImages.length < actualImagePath.length*2)
     {
-        // get a random number between 0 and the number total number of images that we can choose from
+        // get a random number between 0 and the number total number of images that we can choose from - 1
         var randomNumber = Math.floor(Math.random() * actualImagePath.length)
-          // create an if statement that says if the total number added is less than 2, then
+    
         // add the image to the actual image array
-        if(count[randomNumber] < 3)
+        if(count[randomNumber] < 2)
         {
             actualImages.push(actualImagePath[randomNumber]);
             // then add one to the array that makes sure only two images can be added
             count[randomNumber] = count[randomNumber] + 1;
         }
-    }   
+    }
+    console.log("Complete");   
 }
+
+console.log("isthisworking")
 
 function flipImage(number)
 {
     
-    // make the second image appear
+    // second image appears
     if(firstNumber >= 0)
     {
         secondNumber = number;
         document.getElementById(imageNames[number]).src = actualImages[secondNumber];
         
     }
-    else if(firstNumber < 0) // make the first image appear
+
+    // first image appears
+    else if(firstNumber < 0) 
     {
         firstNumber = number;
         document.getElementById(imageNames[firstNumber]).src= actualImages[firstNumber];
     
     }
 
-    // check to see if the images do not match
+    // do images match?
     if(actualImages[secondNumber] != actualImages[firstNumber] && firstNumber >= 0 && secondNumber >= 0)
     {
         score++;
         setTimeout(imagesDisappear, 1000); // calls a method after 1 second
     }
-    // check to see if the images do match
+    // do not match?
     else if(actualImages[secondNumber] == actualImages[firstNumber] && firstNumber >= 0 && secondNumber >= 0)
     {
         score++;
@@ -95,6 +109,8 @@ function flipImage(number)
     }
 }
 
+
+//this part confusing
 function imagesDisappear()
 {
 
@@ -105,7 +121,11 @@ function imagesDisappear()
     secondNumber = -1;
 }
 
-// add to the JSON from the textboxes
+
+//JSON
+
+//fixthisalso
+
 function addToPlayer()
 {
     var firstName = document.getElementById("txtFirstName").value;
@@ -118,6 +138,7 @@ function addToPlayer()
     localStorage.setItem("playerInfo", JSON.stringify(player));
     window.location = "game.html";
 }
+
 
 // get the information out of JSON
 function playerInfo()
