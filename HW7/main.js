@@ -4,22 +4,22 @@ var myViewMasterArray = new Array();
 class ViewMaster
 {
     // creating my objects
-    constructor(title, author, year, description, image)
+    constructor(title, author, year, description,)
     {
         this.title = title;
         this.author = author;
         this.year = year;
         this.description = description
-        this.image = image
+    
     }
 
     
     toString()
     {
-        return "This work is called " + this.title + ' by ' + this.author + ' from ' + this.year + ' and is about ' + this.description + this.image;    
+        return "This work is called " + this.title + ' by ' + this.author + ' from ' + this.year + ' and is about ' + this.description;
     }
 
-    // this is the property theTitle which returns the title as well only the title
+   
     get theTitle()
     {
         return this.title;
@@ -27,8 +27,8 @@ class ViewMaster
 
 }
 
-// this function is called in the body of the HTML page so that the objects are created and added to the 
-// array myViewFinderArray
+
+// array m
 function initializeArray()
 {
     // 1
