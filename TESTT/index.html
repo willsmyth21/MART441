@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bouncing Square</title>
+</head>
+<body>
+  <canvas id="canvas" width="400" height="400"></canvas>
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+
+    // Set the initial position and velocity of the square
+    let x = 0;
+    let y = 0;
+    let vx = 5;
+    let vy = 5;
+    let squareSize = 50;
+
+    function animate() {
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw the square
+      ctx.fillStyle = "blue";
+      ctx.fillRect(x, y, squareSize, squareSize);
+
+      // Update the position of the square
+      x += vx;
+      y += vy;
+
+      // Check if the square hits the canvas boundaries
+      if (x + squareSize >= canvas.width || x <= 0) {
+        vx = -vx; // Change the x-velocity to make the square bounce off the horizontal walls
+      }
+      if (y + squareSize >= canvas.height || y <= 0) {
+        vy = -vy; // Change the y-velocity to make the square bounce off the vertical walls
+      }
+
+      // Call the animate function again
+      requestAnimationFrame(animate);
+    }
+
+    // Call the animate function to start the animation loop
+    animate();
+  </script>
+</body>
+</html>
