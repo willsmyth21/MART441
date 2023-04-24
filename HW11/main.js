@@ -94,7 +94,7 @@ function getKey(event) {
     // if a collision happens
     if (didCollide) {
         // change the background color
-        canvas.style.backgroundColor = "rgb" + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + "," + Math.floor(Math.random() * 255) + ")";
+        canvas.style.backgroundColor = "#00f8";
        
         // changing the size of sqaures
         square1.setWidth(square1.theWidth - 1);

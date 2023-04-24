@@ -92,16 +92,15 @@ $(document).ready(function () {
 
 function getKey(event) {
 
-    // only checking collision when a key is pressed
     var didCollide = hasCollided(square1, square2);
-    // if a collision happens
+    // when collision
     if (didCollide) {
         square1.setWidth(square1.theWidth - 1);
         square1.setHeight(square1.theHeight - 1);
         square2.setWidth(square2.theWidth + 1);
         square2.setHeight(square2.theHeight + 1);
     }
-    // movement for blue square
+    // movement for blue square --- USER!!!!
     var char = event.which || event.keyCode;
     var actualLetter = String.fromCharCode(char);
     if (actualLetter == "w") {
